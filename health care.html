@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landscape Page</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .navbar {
+            overflow: auto;
+            background-color: rgb(155, 65, 228);
+            display: flex;
+            justify-content: space-between; /* Align the logo and search bar */
+            align-items: center; /* Center items vertically */
+            position: relative;
+        }
+        .navbar-logo {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+        .navbar-search {
+            background-color: white;
+            border:#fff;
+            border-bottom: 2px solid white; /* Add a bottom border for the search bar */
+            color: white;
+            font-size: 16px;
+            padding: 5px;
+            outline:auto;
+        }
+
+        /* Add a container for the search bar to position it on the right side */
+        .search-container {
+            position: absolute;
+            top: 50%;
+            right: 20px; /* Adjust the right position as needed */
+            transform: translateY(-50%);
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 35px;
+            color: rgb(247, 246, 248);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: wavy;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: verdana;
+        }
+
+        
+        
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: #0005;
+            line-height: 50px;
+        }
+
+        nav ul {
+            float: left;
+            margin-right: 30px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            transition: 0.7s all;
+        }
+
+        nav ul li:hover {
+            background-color: #088;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 30px;
+        }
+  .banner {
+    width: 100%;
+    height: 700px;
+    background-image: url(https://d1lyi436ccpkte.cloudfront.net/strapi-assets/airport_medical_banner_1440x500_3c14c69c40_b671e2ea46.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .heading {
+    margin-bottom: 0; /* Remove the margin-bottom */
+  padding-top: 400px; /* Adjust this value to position the text vertically */
+  font-size: 50px;
+  color: rgb(15, 14, 14);
+  padding-bottom: 10px; /* Adjust this value to control space from bottom */
+  text-align: left; 
+  padding-left: 70px;/* Center-align the text */
+    
+  }
+  .main-text {
+    margin-top: 30px;
+    text-align: left;
+    padding-left: 120px;
+    font-size: 30px;
+  }
+  .text {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 120px;
+    font-size: 18px;
+  }
+  .bottom-text {
+    margin-top: 10px;
+    text-align: left;
+    padding-left: 120px;
+    font-size: 18px;
+  }
+.logo {
+    width: 40px; 
+    height: auto;
+    vertical-align: middle;
+    padding-left: 120px;
+    margin-right: 5px; 
+    background-color: transparent;
+  }
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .back-to-top:hover {
+    background-color: #0056b3;
+  }
+  .main-text, .text, .bottom-text {
+  margin-top: 10px; /* Adjust as needed */
+  text-align: left;
+  /* Remove padding-left: 120px; */
+  font-size: 18px;
+}
+</style>
+<script>
+  window.addEventListener('scroll', function() {
+    var backToTopButton = document.querySelector('.back-to-top');
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+</script>
+</head>
+<body>
+  <div class="banner">
+    <nav>
+        <ul>
+            <li><a href="C:\Users\ayush\Desktop\webEL\webdevEL.html">Home</a></li>
+            <li><a href="file:///C:/Users/ayush/OneDrive/Desktop/prog/new%20intro.html">Flights</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Before You Fly</a></li>
+            <li><a href="#">At The Airport</a></li>
+            <li><a href="#">Services</a></li>
+
+            <input type="text" class="navbar-search"  placeholder="Search">
+            
+        </ul>
+        
+    </nav>
+    <h1 class="heading">Airport Medical Services</h1>
+  </div>
+  <br><br>
+  
+  <h1 class="text" style="font-size: xx-large;">Airport Medical Services</h1><br>
+  <img src=https://w7.pngwing.com/pngs/125/867/png-transparent-computer-icons-geo-fence-gps-navigation-systems-environment-icon-heart-share-icon-gps-navigation-systems.png alt="Logo" class="logo"><br></br>
+  <p class="text">Aster Medical Centre - adjacent to Terminal 1 building<br></br></p>
+<p class="main-text">Aster Medical Clinic<br></br>
+Terminal 1</p>
+<p class="text">Level 1, next to Thomas Cook</p>
+
+<p class="main-text">Terminal 2</p>
+<p class="text">Near Arrival exit gates</p><br></br>
+ <img src=https://img.freepik.com/free-icon/auricular-phone_318-1028.jpg alt="Logo" class="logo"><br></br>
+  <p class="bottom-text">Duty Medical Officer (Aster Medical Centre) – +91 9739733335<br></br>
+Duty Medical Officer T1 - +91 9148790154<br></br>
+Duty Medical Officer T2 - +91 9513343244</p><br></br>
+
+<button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+</body>
+</html>
