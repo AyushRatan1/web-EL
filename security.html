@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+            overflow: auto;
+            background-color: rgb(155, 65, 228);
+            display: flex;
+            justify-content: space-between; /* Align the logo and search bar */
+            align-items: center; /* Center items vertically */
+            position: relative;
+        }
+        .navbar-logo {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+        .navbar-search {
+            background-color: white;
+            border:#fff;
+            border-bottom: 2px solid white; /* Add a bottom border for the search bar */
+            color: white;
+            font-size: 16px;
+            padding: 5px;
+            outline:auto;
+        }
+
+        /* Add a container for the search bar to position it on the right side */
+        .search-container {
+            position: absolute;
+            top: 50%;
+            right: 20px; /* Adjust the right position as needed */
+            transform: translateY(-50%);
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 35px;
+            color: rgb(247, 246, 248);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: wavy;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: verdana;
+        }
+
+        
+        
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: #0005;
+            line-height: 50px;
+        }
+
+        nav ul {
+            float: left;
+            margin-right: 30px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            transition: 0.7s all;
+        }
+
+        nav ul li:hover {
+            background-color: #088;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 30px;
+        }
+
+    .title {
+      font-size: x-large;
+      color: rgb(45, 125, 128);
+      /* padding-left: 99px; */
+    }
+
+    .container {
+      width: 100%;
+      margin: 0px;
+
+      
+      /* padding: 20px; */
+    }
+
+    
+
+    .image-page {
+      background-image: url('https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Security_Check_679f244d0a.jpg');
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 150px;
+      margin: ;
+      height: 50vh;
+    }
+
+    .transparent-box {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+      height: 20vh;
+    }
+
+    .centered-text {
+      text-align: justify;
+      margin-bottom: 35px;
+      margin-top: 25px;
+    }
+
+    .horizontal-line {
+      width: 98%;
+      border-top: 1px solid #333;
+      /* margin: 20px ; */
+      margin-bottom: auto;
+      /* margin-right: 50px; */
+    }
+
+    .text-box {
+      padding: 20px;
+      border: 1px solid #333;
+      border-radius: 5px;
+      text-align: center;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-bottom: 10px;
+    }
+
+    .travel {
+      font-size: xx-large;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      cursor: pointer;
+    }
+
+    
+    .page {
+      background-color: #f0f0f0;
+      
+      margin-top: 0px;
+      /* padding-left: 99px; */
+    }
+
+    .page3 {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .text {
+      font-size: larger;
+      /* font-family: ; */
+      padding-right: 45px;
+      padding-left: 45px;
+
+    }
+
+    .info-block {
+      width: 10%;
+      padding: 15px;
+      margin-right: 40px;
+      background-color: white;
+      padding-left: 10px;
+    }
+
+    .ab {
+      padding-left: 30px;
+      margin-left: 20px;
+      font-weight: 100;
+      font-size: 1000px;
+    }
+
+    .others {
+      padding-top: 15px;
+      /* margin-left: 20px; */
+    }
+
+    .image-side {
+      width: 20%;
+      padding-left: 20px;
+      ;
+    }
+
+    .photo {
+      padding-left: 99px;
+      padding-top: 25px;
+      /* width: 100%;
+      height: 100%; */
+
+    }
+
+    .data {
+      font-size: large;
+      text-align: justify;
+      /* padding-left: 99px; */
+    }
+    .accordion {
+      cursor: pointer;
+      border: 1px solid #333;
+      border-radius: 25px;
+      margin-bottom: 5px;
+      padding: auto;
+    }
+
+    .accordion-content {
+      display: none;
+      background-color: rgba(247, 244, 244, 0.5);
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .accordion:hover {
+            background-color: rgb(211, 215, 218);
+            color: white; /* Change text color to white on hover */
+        }
+
+    .active .accordion-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="page">
+
+  <div class="container">
+    <div class="page image-page">
+      <nav>
+        <ul>
+            <li><a href="C:\Users\ayush\Desktop\webEL\webdevEL.html">Home</a></li>
+            <li><a href="file:///C:/Users/ayush/OneDrive/Desktop/prog/new%20intro.html">Flights</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Before You Fly</a></li>
+            <li><a href="#">At The Airport</a></li>
+            <li><a href="#">Services</a></li>
+
+            <input type="text" class="navbar-search"  placeholder="Search">
+            
+        </ul>
+        
+    </nav>
+    <div class="page image-page">
+      <div class="transparent-box">
+        <h1>
+          Security Information</h1>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <br>
+  
+
+  
+  <div class="pagex" style="font-size: x-large;">
+    All passengers must pass through the security screening process after check-in and before entering the departure
+    area.
+  </div>
+  <!-- <div class="horizontal-line page"></div> -->
+  <br><br>
+  <div class="page">
+    <div class="accordion">
+      <h3 class="title" style="font-size: xx-large;">Check-In Time</h3>
+      <div class="accordion-content">
+        <span class="data" style="font-size: x-large;">
+          Most airlines require that passengers report at check-in counters two hours before departure for domestic flights
+          and three hours before departure for international flights. Please check with your airline for updates.
+        </span>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="page">
+      <div class="accordion">
+        <h3 class="title" style="font-size: xx-large;">Hand Baggage Restrictions</h3>
+        <div class="accordion-content">
+          <span class="data" style="font-size: x-large;">
+            Not more than 100 ml of liquids, aerosols, and gels, is permitted. <br>
+      Sharp items such as metallic, replica weapons and articles with the potential to cause interference with Civil
+      Aviation operations are not permitted. Such items may be confiscated by the authorities.
+          </span>
+        </div>
+      </div>
+  
+  <br><br>
+  <div class="page">
+    <div class="accordion">
+      <h3 class="title" style="font-size: xx-large;">Prohibited Items</h3>
+      <div class="accordion-content">
+        <span class="data" style="font-size: x-large;">
+          Effective January 17, 2012, as per Ministry of Agriculture, Government of India, carriage of soya beans, chickpeas
+          and safflower seeds to U.S.A is prohibited. <br><br>International passengers, please note: <br>
+          <b>Ensure that your passport and boarding pass is stamped by the Immigration authorities.
+            Sikh passengers are not permitted to carry Kirpans.</b>
+        </span>
+      </div>
+    </div>
+
+
+  <br><br>
+  <div class="page">
+    <div class="accordion">
+      <h3 class="title" style="font-size: xx-large;">Check-In Procedure</h3>
+      <div class="accordion-content">
+        <span class="data" style="font-size: x-large;">
+          Carry your e-ticket or get your boarding pass at the self-check-in kiosks near departure gates. <br>
+      Ensure that you have a valid government photo ID for security verification. <br>
+      Proceed to the self-check in kiosk (CUSS - Common Use Self Sevice ) or check in counters to collect your boardingpass/baggage tag/drop luggage. Use self-bag drop. <br>
+      Scan your boarding pass at PESC (Pre Embarkation Security Check) before you pass through security check.
+        </span>
+      </div>
+    </div>
+    
+
+  
+
+  <div class="photo">
+    <img src="https://d1lyi436ccpkte.cloudfront.net/uploads/25012023_BIAL_Restricted_Item_1280x769_Cabin_47e054cad3.jpg"
+      alt="cabbin_baggage">
+  </div>
+
+  <div class="photo">
+    <img
+      src="https://d1lyi436ccpkte.cloudfront.net/uploads/25012023_BIAL_Restricted_Item_1280x769_Check_in_dd54819c14.jpg"
+      alt="ckeckin_baggage">
+  </div>
+
+  <div class="page" style="text-align: justify; font-size: large;">
+    Safety at the Airport <br>
+
+    As a passenger, you play a vital role in countering any potential threat at the Airport that might come to your
+    notice. You are requested to report any unclaimed or unidentified baggage or suspicious person or activity to the CISF Control Room and Terminal Manager. <br>
+    <br>
+
+    Airport Authorities have the right to control and take action against unruly passengers classified as below:
+    <br>
+    <table>
+      <ul>
+       <li>Unruly behaviour arising from consumption of narcotics and/or alcohol</li> 
+    <li>Refusal to comply with Safety Rules and Standards</li>
+   <li>Verbal and/or physical confrontation, threats to an Airport Official</li> 
+   <li>Sexual abuse or harassment</li> 
+   <li>Any other riotous behaviour</li> 
+
+      </ul>
+    </table>
+    
+  </div>
+
+
+
+
+
+
+  <!-- <div class="text-box">
+      <p>Note: Mode of payment: Bus fare will be collected by cash only, upon boarding.</p>
+    </div> -->
+  </div>
+  </div>
+
+  <div>
+    <div class="page page3">
+      <div class="image-side">
+        <img style=" height: 150px; width: 150px;"
+          src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Bengaluru_Airport_Logo_d71fb85c36.svg" alt="KIA">
+      </div>
+      <div></div>
+      <div class="info-block">
+        <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="" style="border-radius: 5;">FAQs</a>
+
+      </div>
+      <div class="info-block">
+        <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="">Disclaimer</a>
+      </div>
+      <div class="info-block">
+        <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="">Contact Us</a>
+      </div>
+      <div class="info-block">
+        <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank" rel="noopener noreferrer"
+          class="footer_download_image">
+          <img
+            src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/google_play_71afea7706_776f74f714_4b190b64d9.svg"
+            alt="Download on Google Play">
+        </a>
+      </div>
+      <div class="info-block">
+        <a href="https://apps.apple.com/us/app/blr-airport/id1501331497?ls=1">
+          <img
+            src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/ios_app_store_7228363a5c_6fae140a41_27c4893ebb.svg"
+            alt="Download on App Store">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+  <script>
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.back-to-top').style.display = "block";
+      } else {
+        document.querySelector('.back-to-top').style.display = "none";
+      }
+    }
+
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    
+    // JavaScript to toggle the content when the accordion is clicked
+    const accordions = document.querySelectorAll('.accordion');
+
+    accordions.forEach(accordion => {
+      const title = accordion.querySelector('.title');
+
+      title.addEventListener('click', () => {
+        accordion.classList.toggle('active');
+      });
+    });
+  
+
+  </script>
+  <div class="page">
+    <p>
+    <pre>      &copy; 2023 BIAL. All Rights Reserved.</pre>
+    </p>
+  </div>
+
+
+</body>
+
+</html>
