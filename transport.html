@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0px;
+    /* padding: 20px; */
+  }
+
+  .page {
+    padding: 20px;
+  }
+
+  .image-page {
+    background-image: url('https://www.bengaluruairport.com/static/media/Transportion-Page-Banner-new.3552f8db3ec6b6d54e23.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px ;
+    margin: ;
+  }
+
+  .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .centered-text {
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+
+  .horizontal-line {
+    width: 93%;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .text-box {
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+  }
+  .travel{
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  .page {
+      background-color: #f0f0f0;
+      /* margin-left: 20px; */
+    }
+
+  .page3 {
+      display: flex;
+      align-items: flex-start;
+    }
+
+  .text{
+    font-size: larger;
+    /* font-family: ; */
+    padding-right: 45px;
+    padding-left: 45px;
+    
+  }
+  .info-block {
+      width: 10%;
+      padding: 15px;
+      margin-right: 40px;
+      background-color: white;
+  }
+  .ab{
+      padding-left: 30px;
+      margin-left: 20px;
+      font-weight: 100;
+      font-size: 1000px;
+  }
+
+  .others{
+      padding-top: 15px;
+      /* margin-left: 20px; */
+  }
+  .image-side {
+      width: 20%;
+      /* padding: 20px; */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="page image-page">
+    <div class="transparent-box">
+      <h1>Efficient Travel choices</h1>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<div class="others">
+  <div class="page">
+    <div class="centered-text">
+      <p style="font-size: x-large;" class="ab">Airport Bus - Vayu Vajra</p><br>
+      <p class="text">The BMTC Vayu Vajra AC bus service is an efficient and inexpensive mode of transport. The fleet of air-conditioned buses offers seamless service to and from the City.</p>
+      <p class="text"><b>
+        Information: Students arriving from Ukraine in Bengaluru can avail free rides to their destination by KSRTC bus service at Kempegowda International Airport Bengaluru. <br>For queries, please contact KSRTC call centre on 080-26252625.</b>
+      </p>
+    </div>
+    <div class="horizontal-line"></div>
+    <div class="text-box">
+      <p>Note: Mode of payment: Bus fare will be collected by cash only, upon boarding.</p>
+    </div>
+  </div>
+</div>  
+
+<div>
+  <div class="page page3">
+    <div class="image-side">
+      <img style=" height: 150px; width: 150px;"
+        src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Bengaluru_Airport_Logo_d71fb85c36.svg" alt="KIA">
+    </div>
+    <div class="info-block">
+      <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="" style="border-radius: 5;">FAQs</a>
+
+    </div>
+    <div class="info-block">
+      <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Disclaimer</a>
+    </div>
+    <div class="info-block">
+      <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Contact Us</a>
+    </div>
+    <div class="info-block">
+      <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank" rel="noopener noreferrer"
+        class="footer__download__image">
+        <img
+          src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/google_play_71afea7706_776f74f714_4b190b64d9.svg"
+          alt="Download on Google Play">
+      </a>
+    </div>
+    <div class="info-block">
+      <a href="https://apps.apple.com/us/app/blr-airport/id1501331497?ls=1">
+        <img
+          src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/ios_app_store_7228363a5c_6fae140a41_27c4893ebb.svg"
+          alt="Download on App Store">
+      </a>
+    </div>
+  </div>
+</div>
+
+<button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.querySelector('.back-to-top').style.display = "block";
+    } else {
+      document.querySelector('.back-to-top').style.display = "none";
+    }
+  }
+
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<div class="page">
+  <p>
+  <pre>      &copy; 2023 BIAL. All Rights Reserved.</pre>
+  </p>
+</div>
+
+
+</body>
+</html>
