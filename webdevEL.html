@@ -469,7 +469,7 @@
         .image-gallery-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content:end;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -479,7 +479,7 @@
 .image-gallery {
     width: calc(32% - 10px);
     height:auto;
-    margin: 5px;
+    margin: 75px;
     cursor: pointer;
     transition: opacity 0.5s ease;
     transition: transform 0.5s ease;
@@ -576,7 +576,7 @@
         .image-gallery-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start; /* Adjust as needed */
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -670,13 +670,13 @@ body {
     background-color: rgb(255, 255, 255);
     
     
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
 .gallery-content {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 2000px;
+    margin:auto;
 }
 
 .image-gallery-container {
@@ -707,6 +707,77 @@ body {
     text-decoration: none;
     color: #0e0e0e;
 }
+.gallery-page2 {
+    background-color: rgb(244, 244, 218);
+    
+    
+    padding: 30px ;
+    text-align: center;
+}
+
+.gallery-content2 {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+.image-gallery-container2 {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start; /* Change this to 'flex-start' to align items to the start */
+    align-items: center; /* Add this to vertically center the items */
+    margin-top: 50px;
+    max-width:1200px;
+    overflow-x: auto;
+    overflow-y: hidden; /* Hide vertical overflow */
+    white-space: nowrap; 
+}
+
+.image-gallery2 {
+    flex: 0 0 calc(30% - 105px); /* 25% to fit 4 boxes */
+    height: auto;
+    margin: 15px; /* Adjust as needed */
+    cursor: pointer;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+}
+
+.image-gallery2 img {
+    width: 100%;
+    height:auto;
+}
+
+.image-gallery:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+}
+.link2{
+    text-decoration: none;
+    color: #0e0e0e;
+}
+.option-box6 {
+            width: 500x;
+            height: 50px;
+            background-color: rgb(141, 210, 212);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin: 10px;
+        }
+        .option-box6:hover {
+            background-color:  rgb(23, 209, 215);
+        }
+
+        /* Option box text style */
+        .option-text6 {
+            font-size: 16px;
+            color: rgb(8, 8, 8); /* Changed font color to white */
+            font-weight: bold;
+        }
 
 
         
@@ -813,9 +884,10 @@ body {
         
         
         <div class="image-container">
-            <h1 style="justify-content: center;"><div type="bold" class="sc-dAlyuH jUEgeS" style="font-family: ManropeBold;">What's new at BLR Airport</div></h1>
+            
             
                 <img class="image-box" src="" alt="Image Box">
+                
 
            
            
@@ -884,41 +956,58 @@ body {
         <h1>Unwind Outdoors</h1>
         <h2>Check out what's happening at The Quad, right outside the arrivals.</h2>
     
-        <div class="content-box5">
-            <div class="image-gallery-container">
-                <div class="image-gallery">
-                    <img src="" alt="Image 1" class="img-popup">
-                    <div class="option-box">
-                        <span class="option-text">Option 1</span>
+            <div class="image-gallery-container2">
+                <div class="image-gallery2">
+                    <img src="https://d1lyi436ccpkte.cloudfront.net/stores/Windmills.webp" alt="Image 1" >
+                    <p style="font-size: large; font-weight:900 ;">Windmills</p>
+                    <br>
+                    <p style="color: rgb(61, 61, 60);font-size: small;">The Quad by BLR, Opposite Arrivals<br>
+                        ₹ 2200 for two</p>
+                    <div class="option-box6">
+                        <span class="option-text">Researve a table</span>
                     </div>
-                    <p>Content for Image 1</p>
+                    
                 </div>
     
-                <div class="image-gallery">
-                    <img src="https://example.com/image2.jpg" alt="Image 2" class="img-popup">
-                    <div class="option-box">
-                        <span class="option-text">Option 2</span>
+                <div class="image-gallery2">
+                    <img src="https://d1lyi436ccpkte.cloudfront.net/stores/Barley_&_Grapes_Cafe.webp" alt="Image 2" >
+                    <p style="font-size: large; font-weight:600 ;">Barley & Grapes</p>
+                    <br>
+                    <p style="color: rgb(61, 61, 60);font-size: small;">The Quad by BLR, Opposite Arrivals<br>
+                        ₹ 1600 for two</p>
+                    <div class="option-box6">
+                        <span class="option-text">Researve a table</span>
                     </div>
-                    <p>Content for Image 2</p>
+                   
                 </div>
     
-                <div class="image-gallery">
-                    <img src="https://example.com/image3.jpg" alt="Image 3" class="img-popup">
-                    <div class="option-box">
-                        <span class="option-text">Option 3</span>
+                <div class="image-gallery2">
+                    <img src="https://d1lyi436ccpkte.cloudfront.net/stores/Bira_airport.jpg" alt="Image 3" >
+                    <p style="font-size: large; font-weight:900 ;">BIRA</p>
+                    <br>
+                    <p style="color: rgb(61, 61, 60);font-size: small;">The Quad by BLR, Opposite Arrivals<br>
+                        ₹ 1600 for two</p>
+                    <div class="option-box6">
+                        <span class="option-text">Researve a table</span>
                     </div>
-                    <p>Content for Image 3</p>
+                    
                 </div>
     
-                <div class="image-gallery">
-                    <img src="https://example.com/image4.jpg" alt="Image 4" class="img-popup">
-                    <div class="option-box">
-                        <span class="option-text">Option 4</span>
+                <div class="image-gallery2">
+                    <img src="https://d1lyi436ccpkte.cloudfront.net/stores/BWW_airports.jpg" alt="Image 4" >
+                    <p style="font-size: large; font-weight:900 ;">Buffalo Wild Wings</p>
+                    <br>
+                    <p style="color: rgb(61, 61, 60);font-size: small;">The Quad by BLR, Opposite Arrivals<br>
+                        ₹ 2200 for two</p>
+                    <div class="option-box6">
+                        <span class="option-text">Researve a table</span>
                     </div>
-                    <p>Content for Image 4</p>
+                   
                 </div>
+                
+
             </div>
-        </div>
+        
     </div>
 
     
@@ -1013,9 +1102,10 @@ body {
 document.addEventListener("DOMContentLoaded", function () {
     const imageBox = document.querySelector(".image-box");
     const images = [
+        "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-05-235407.png",
         "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-05-235319.png",
         "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-05-235346.png",
-        "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-05-235407.png",
+        
         "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-06-001954.png"
     ];
     let currentImageIndex = 0;
