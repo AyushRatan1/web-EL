@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOST AND FOUND</title>
     <style>
-       
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
+
         .banner {
             width: 100%;
             height: 500px;
@@ -18,80 +19,105 @@
             background-size: cover;
             background-position: center;
         }
+
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            max-width: 100%;
+            /* margin: 20px auto; */
+            margin-left: 60px;
+            margin-right: 60px;
+            text-align: justify;
             padding: 20px;
         }
+
         .input-container {
             display: flex;
             align-items: center;
         }
+
         .input-container input[type="date"] {
             width: 45%;
             padding: 5px;
             margin-right: 10px;
         }
+
         .input-container button {
             padding: 5px 10px;
         }
-         .main-text {
-  
-    font-weight:bold;
-    font-size: 18px;
-  }
- .text{
-    font-weight: lighter;
-    font-size: 18px;
-  }
-.page {
-      background-color: #f0f0f0;
-      /* margin-left: 20px; */
-    }
- .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    cursor: pointer;
-  }
- .info-block {
-      width: 10%;
-      padding: 15px;
-      margin-right: 40px;
-      background-color: white;
-  }
- .page3 {
-      display: flex;
-      align-items: flex-start;
-    }
-.contact-info {
-    display: flex;
-    align-items: center;
-  }
-  .icon {
-    font-size: 18px;
-    margin-right: 5px;
-  }
-    </style>
-<script>
-  window.addEventListener('scroll', function() {
-    var backToTopButton = document.querySelector('.back-to-top');
-    if (window.scrollY > 300) {
-      backToTopButton.style.display = 'block';
-    } else {
-      backToTopButton.style.display = 'none';
-    }
-  });
 
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-</script>
+        .main-text {
+
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .text {
+            font-weight: lighter;
+            font-size: 18px;
+        }
+
+        .page {
+            background-color: white;
+            /* margin-left: 20px; */
+            width: 100%;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            cursor: pointer;
+        }
+
+        .info-block {
+            width: 10%;
+            padding: 15px;
+            margin-left: 40px;
+            background-color: white;
+            margin-top: 40px;
+        }
+
+        .page3 {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+
+        .image-side {
+            width: 20%;
+            padding-left: 40px;
+
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function () {
+            var backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </head>
+
 <body>
     <div class="banner"></div>
     <div class="container">
@@ -102,109 +128,132 @@
             <input type="date" id="end-date" name="end-date">
             <button id="search-button">Search</button>
         </div><BR><BR><BR>
-    <div class="main-text">Contact us if you are unable to locate your items from the search.</div>  
-<div class="text">TERMINAL 1 and TERMINAL 2<br>
-  <div class="contact-info">
-    <span class="icon">&#9742;</span>+91-8022012001 / +91-8066785555<br>
-</div>
-<div class="text">
-<br><br>TERMINAL 1<br>
+        <div class="main-text">Contact us if you are unable to locate your items from the search.</div>
+        <div class="text">TERMINAL 1 and TERMINAL 2<br>
+            <div class="contact-info">
+                <span class="icon">&#9742;</span>+91-8022012001 / +91-8066785555<br>
+            </div>
+            <div class="text">
+                <br><br>TERMINAL 1<br>
 
-  </div>
-<span class="icon">&#9993;</span>
-<a href ="lostandfound@bialairport.com">lostandfound@bialairport.com</a><br>
-<br>
-<div class="text">
-TERMINAL 2<br>
- </div>
-<span class="icon">&#9993;</span>
-<a href = "t2lostandfound@bialairport.com"> t2lostandfound@bialairport.com</a><br>
+            </div>
+            <span class="icon">&#9993;</span>
+            <a href="lostandfound@bialairport.com">lostandfound@bialairport.com</a><br>
+            <br>
+            <div class="text">
+                TERMINAL 2<br>
+            </div>
+            <span class="icon">&#9993;</span>
+            <a href="t2lostandfound@bialairport.com"> t2lostandfound@bialairport.com</a><br>
 
-<br><br>
-<div class="text">
-Lost & Found information counter location<br>
-<br><br>
-TERMINAL 1<br>
-Kerbside and Departure Hall: counter #16<br>
+            <br><br>
+            <div class="text">
+                Lost & Found information counter location<br>
+                <br><br>
+                TERMINAL 1<br>
+                Kerbside and Departure Hall: counter #16<br>
 
-<br><br>
-TERMINAL 2<br>
-Arrivals level, behind Airport Shuttle drop-off & pick-up points - P16 / P17<br>
-<br><br><br>
+                <br>
+                TERMINAL 2<br>
+                Arrivals level, behind Airport Shuttle drop-off & pick-up points - P16 / P17<br>
+                <br><br>
 
-Operating Hours: Monday to Sunday from 0200 hours to 2359 hours<br>
-<br><br><br>
-Claim Response Time: Within 3 working days<br>
+                Operating Hours: Monday to Sunday from 0200 hours to 2359 hours<br>
+                <br><br>
+                Claim Response Time: Within 3 working days<br>
 
-<br><br><br>
-If an item is lost on board the flight or at the gate area, please contact the airline's Lost and Found department. They may have a different process for handling lost items.
-</div>
-<br><br><br>
-<div class="main-text">Documents required to claim items</div>
-<br>
-<div class="text">Once you’ve identified your misplaced articles, please submit the following documents to claim the items:<br>
-<br>
-<span ol>
-<li>Copy of boarding pass</li>
-<li>Details of items being claimed (verification)</li>
-<li>Valid Government photo ID proof</li>
-</ol>
-<br>
+                <br><br>
+                If an item is lost on board the flight or at the gate area, please contact the airline's Lost and Found
+                department. They may have a different process for handling lost items.
+            </div>
+            <br><br>
+            <div class="main-text">Documents required to claim items</div>
+            <br>
+            <div class="text">Once you’ve identified your misplaced articles, please submit the following documents to
+                claim the items:<br>
+                <br>
+                <span ol>
+                    <li>Copy of boarding pass</li>
+                    <li>Details of items being claimed (verification)</li>
+                    <li>Valid Government photo ID proof</li>
+                    </ol>
+                    <br>
 
-If you have been authorised by the owner to claim the item, please submit the following documents:<br>
-<br>
-<span ol>
-<li>Valid Government photo-ID proof of the owner of the item</li>
+                    If you have been authorised by the owner to claim the item, please submit the following
+                    documents:<br>
+                    <br>
+                    <span ol>
+                        <li>Valid Government photo-ID proof of the owner of the item</li>
 
-<li>Valid Government photo-ID proof of the individual authorised to collect</li>
-<li>Copy of boarding pass</li>
-<li>Letter of authorisation from the owner of the item, with details of the article.</li></div>
-</ol>
-<br><br><br>
-<div class="main-text">Rules & Regulations</div><br>
-   <div class="text">Lost and Found goods must be routed through CISF and cannot be directly handled by the finder<br>
-Lost and Found Department does not accept or handle Security Restricted Articles and shall not be held responsible for their management<br>
-<br><br>
-BLR Airport (BIAL) shall not be held responsible, and no claim shall lie against BLR Airport (BIAL) for any good(s) that has been lost on its premises in the following scenarios:<br>
-a) If the claimant fails to establish ownership over the lost good(s) by not providing the documents sought for within the retention period<br>
-b) When the property has been disposed off after the retention period provided for the respective lost good(s).</div>  
-    <div>
-  <div class="page page3">
-    <div class="image-side">
-      <img style=" height: 150px; width: 150px;"
-        src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Bengaluru_Airport_Logo_d71fb85c36.svg" alt="KIA">
+                        <li>Valid Government photo-ID proof of the individual authorised to collect</li>
+                        <li>Copy of boarding pass</li>
+                        <li>Letter of authorisation from the owner of the item, with details of the article.</li>
+            </div>
+            </ol>
+            <br><br>
+            <div class="main-text">Rules & Regulations</div><br>
+            <div class="text">Lost and Found goods must be routed through CISF and cannot be directly handled by the
+                finder<br>
+                Lost and Found Department does not accept or handle Security Restricted Articles and shall not be held
+                responsible for their management<br>
+                <br><br>
+                BLR Airport (BIAL) shall not be held responsible, and no claim shall lie against BLR Airport (BIAL) for
+                any good(s) that has been lost on its premises in the following scenarios:<br>
+                a) If the claimant fails to establish ownership over the lost good(s) by not providing the documents
+                sought for within the retention period<br>
+                b) When the property has been disposed off after the retention period provided for the respective lost
+                good(s).
+            </div>
+        </div>
     </div>
-    <div class="info-block">
-      <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="" style="border-radius: 5;">FAQs</a>
+    <br><br>
+    <br>
+
+
+    <div class="page page3">
+        <div class="image-side">
+            <img style=" height: 150px; width: 150px;"
+                src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Bengaluru_Airport_Logo_d71fb85c36.svg"
+                alt="KIA">
+        </div>
+        <div class="info-block">
+            <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="" style="border-radius: 5;">FAQs</a>
+        </div>
+        <div class="info-block">
+            <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="">Disclaimer</a>
+        </div>
+        <div class="info-block">
+            <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="">Contact Us</a>
+        </div>
+        <div class="info-block">
+            <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank"
+                rel="noopener noreferrer" class="footer_download_image">
+                <img src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/google_play_71afea7706_776f74f714_4b190b64d9.svg"
+                    alt="Download on Google Play">
+            </a>
+        </div>
+        <div class="info-block">
+            <a href="https://apps.apple.com/us/app/blr-airport/id1501331497?ls=1">
+                <img src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/ios_app_store_7228363a5c_6fae140a41_27c4893ebb.svg"
+                    alt="Download on App Store">
+            </a>
+        </div>
+
+    </div><span>
+        <div class="page">
+            <p>
+            <pre>         &copy; 2023 BIAL. All Rights Reserved.
+                
+            </pre>
+            </p>
+        </div>
+    </span>
+
     </div>
-    <div class="info-block">
-      <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="">Disclaimer</a>
-    </div>
-    <div class="info-block">
-      <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="">Contact Us</a>
-    </div>
-    <div class="info-block">
-      <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank" rel="noopener noreferrer"
-        class="footer_download_image">
-        <img
-          src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/google_play_71afea7706_776f74f714_4b190b64d9.svg"
-          alt="Download on Google Play">
-      </a>
-    </div>
-    <div class="info-block">
-      <a href="https://apps.apple.com/us/app/blr-airport/id1501331497?ls=1">
-        <img
-          src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/ios_app_store_7228363a5c_6fae140a41_27c4893ebb.svg"
-          alt="Download on App Store">
-      </a>
-    </div>
-  </div>
-</div>
-<button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
-<div class="page">
-<p>
-  <pre>  &copy; 2023 BIAL. All Rights Reserved.</pre>
-  </p>
-</div>
+
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    <div class="page">
+
 </body>
+
 </html>
