@@ -1219,6 +1219,8 @@ video {
     
             </div>
 
+            <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
     
 
   
@@ -1309,7 +1311,9 @@ document.addEventListener("DOMContentLoaded", function () {
         "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-05-235407.png",
         "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-05-235319.png",
         "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-05-235346.png",
-        
+        "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-31-012036.png",
+        "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-31-012110.png",
+        "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-31-012134.png",
         "https://picxart1.files.wordpress.com/2023/08/screenshot-2023-08-06-001954.png"
     ];
     let currentImageIndex = 0;
@@ -1355,10 +1359,33 @@ const amenitiesLink = document.querySelector('.option-text[text="Amenities"]');
         const targetSection = document.querySelector('#page-4');
         targetSection.scrollIntoView({ behavior: 'smooth' }); // Scroll smoothly to the target section
     });
+    window.addEventListener('scroll', function () {
+                var backToTopButton = document.querySelector('.back-to-top');
+                if (window.scrollY > 300) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
+
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
 
         
 
     </script>
+    <div class="page">
+        <p>
+        <pre>      &copy; 2023 BIAL. All Rights Reserved.
+
+            
+        </pre>
+        </p>
+    </div>
 </body>
 
 </html>
