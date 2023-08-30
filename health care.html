@@ -155,6 +155,28 @@
   /* Remove padding-left: 120px; */
   font-size: 18px;
 }
+.image-side {
+      width: 20%;
+      /* padding: 20px; */
+     background-color: #f0f0f0;
+     margin-left: 40px;
+  }
+  .info-block {
+      width: 10%;
+      padding: 15px;
+      margin-right: 40px;
+      background-color: #f0f0f0;
+      margin-top: 40px;
+  }
+  .page {
+      background-color: #f0f0f0;
+      /* margin-left: 20px; */
+    }
+
+  .page3 {
+      display: flex;
+      align-items: flex-start;
+    }
 </style>
 <script>
   window.addEventListener('scroll', function() {
@@ -196,10 +218,10 @@
   
   <h1 class="text" style="font-size: xx-large;">Airport Medical Services</h1><br>
   <img src=https://w7.pngwing.com/pngs/125/867/png-transparent-computer-icons-geo-fence-gps-navigation-systems-environment-icon-heart-share-icon-gps-navigation-systems.png alt="Logo" class="logo"><br></br>
-  <p class="text">Aster Medical Centre - adjacent to Terminal 1 building<br></br></p>
+  <p class="text">Aster Medical Centre - Adjacent to Terminal 1 building<br></br></p>
 <p class="main-text">Aster Medical Clinic<br></br>
 Terminal 1</p>
-<p class="text">Level 1, next to Thomas Cook</p>
+<p class="text">Level 1, Next to Thomas Cook</p>
 
 <p class="main-text">Terminal 2</p>
 <p class="text">Near Arrival exit gates</p><br></br>
@@ -208,7 +230,50 @@ Terminal 1</p>
 Duty Medical Officer T1 - +91 9148790154<br></br>
 Duty Medical Officer T2 - +91 9513343244</p><br></br>
 
+<div>
+    <div class="page page3">
+      <div class="image-side">
+        <img style=" height: 150px; width: 150px; "
+          src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Bengaluru_Airport_Logo_d71fb85c36.svg" alt="KIA">
+      </div>
+      <div class="info-block">
+        <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="" style="border-radius: 5;">FAQs</a>
+  
+      </div>
+      <div class="info-block">
+        <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Disclaimer</a>
+      </div>
+      <div class="info-block">
+        <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Contact Us</a>
+      </div>
+      <div class="info-block">
+        <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank" rel="noopener noreferrer"
+          class="footer__download__image">
+          <img
+            src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/google_play_71afea7706_776f74f714_4b190b64d9.svg"
+            alt="Download on Google Play">
+        </a>
+      </div>
+      <div class="info-block">
+        <a href="https://apps.apple.com/us/app/blr-airport/id1501331497?ls=1">
+          <img
+            src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/ios_app_store_7228363a5c_6fae140a41_27c4893ebb.svg"
+            alt="Download on App Store">
+        </a>
+      </div>
+    </div>
+  </div>
+
 <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+
+<div class="page">
+    <p>
+    <pre>     
+         &copy; 2023 BIAL. All Rights Reserved.
+        </pre>
+    </p>
+  </div>
+  
 
 </body>
 </html>
