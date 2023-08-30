@@ -883,6 +883,14 @@
             display: flex;
             align-items: flex-start;
         }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -927,14 +935,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
 
     <div class="parallax-2">
 
@@ -1057,9 +1057,12 @@
             </div>
         </div>
 
-        <div class="parallax-5"><pre><h1>  Unwind Outdoors</h1><h2>   Check out what's happening at The Quad, right outside the arrivals.</h2>
-        </pre><div class="image-gallery-container2">
-                <div class="image-gallery2"><img src="https://d1lyi436ccpkte.cloudfront.net/stores/Windmills.webp" alt="Image 1">
+        <div class="parallax-5">
+            <pre><h1>  Unwind Outdoors</h1><h2>   Check out what's happening at The Quad, right outside the arrivals.</h2>
+        </pre>
+            <div class="image-gallery-container2">
+                <div class="image-gallery2"><img src="https://d1lyi436ccpkte.cloudfront.net/stores/Windmills.webp"
+                        alt="Image 1">
                     <pre><p style="font-size: large; font-weight:900 ;">  Windmills</p><p style="color: rgb(61, 61, 60);font-size: small;">   The Quad by BLR, Opposite Arrivals<br>   ₹ 2200 for two</p></pre>
                     <div class="option-box6">
                         <span class="option-text">Researve a table</span>
@@ -1088,7 +1091,7 @@
                 <div class="image-gallery2">
                     <img src="https://d1lyi436ccpkte.cloudfront.net/stores/BWW_airports.jpg" alt="Image 4">
                     <pre><p style="font-size: large; font-weight:900 ;">  Buffalo Wild Wings</p><p style="color: rgb(61, 61, 60);font-size: small;">   The Quad by BLR, Opposite Arrivals<br>   ₹2200 for two</p>          </pre>
-                    
+
                     <div class="option-box6">
                         <span class="option-text">Researve a table</span>
                     </div>
@@ -1099,10 +1102,6 @@
             </div>
 
         </div>
-
-
-
-
 
         <div class="pop-up-overlay">
             <img class="pop-up-image" src="" alt="Pop-up Image">
@@ -1145,14 +1144,7 @@
         </div>
 
 
-
-
-
-
-
-
-
-
+        <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
 
         <script>
             window.addEventListener("scroll", function () {
@@ -1239,13 +1231,31 @@
                 setInterval(changeImage, 4000);
             });
 
+            window.addEventListener('scroll', function () {
+                var backToTopButton = document.querySelector('.back-to-top');
+                if (window.scrollY > 450) {
+                    backToTopButton.style.display = 'block';
+                } else {
+                    backToTopButton.style.display = 'none';
+                }
+            });
 
-
-
-
+            function scrollToTop() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            }
 
 
         </script>
+        <div class="page">
+            <p>
+            <pre>         &copy; 2023 BIAL. All Rights Reserved.
+                
+            </pre>
+            </p>
+        </div>
 </body>
 
 </html>
