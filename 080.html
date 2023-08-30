@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landscape Page</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  .navbar {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
             overflow: auto;
             background-color: rgb(155, 65, 228);
             display: flex;
-            justify-content: space-between; /* Align the logo and search bar */
-            align-items: center; /* Center items vertically */
+            justify-content: space-between;
+            /* Align the logo and search bar */
+            align-items: center;
+            /* Center items vertically */
             position: relative;
         }
+
         .navbar-logo {
             width: 50px;
             height: 50px;
-            margin-left: 20px; /* Adjust the margin as needed */
+            margin-left: 20px;
+            /* Adjust the margin as needed */
         }
+
         .navbar-search {
             background-color: transparent;
-            border:#fff;
-            border-bottom: 2px solid white; /* Add a bottom border for the search bar */
+            border: #fff;
+            border-bottom: 2px solid white;
+            /* Add a bottom border for the search bar */
             color: white;
             font-size: 16px;
             padding: 5px;
-            outline:auto;
+            outline: auto;
         }
 
         /* Add a container for the search bar to position it on the right side */
         .search-container {
             position: absolute;
             top: 50%;
-            right: 20px; /* Adjust the right position as needed */
+            right: 20px;
+            /* Adjust the right position as needed */
             transform: translateY(-50%);
         }
 
@@ -58,13 +67,16 @@
 
         #abc {
             width: 100%;
-            height: 100vh; /* Set to full viewport height */
+            height: 100vh;
+            /* Set to full viewport height */
             background-image: url(https://d1lyi436ccpkte.cloudfront.net/strapi-assets/080_Main_Banner_1_c4ca79540c_8b5168b3a4.jpg);
             background-size: cover;
-            background-position: center; /* Center the background */
-            transition: background-position 0.5s ease; /* Added smooth transition */
+            background-position: center;
+            /* Center the background */
+            transition: background-position 0.5s ease;
+            /* Added smooth transition */
         }
-        
+
 
         nav {
             width: 100%;
@@ -93,92 +105,128 @@
             color: #fff;
             padding: 30px;
         }
-  .banner {
-    width: 100%;
-    height: 500px;
-    background-image: url(https://d1lyi436ccpkte.cloudfront.net/strapi-assets/080_Main_Banner_1_c4ca79540c_8b5168b3a4.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .heading {
-    margin-top: 40px;
-    text-align: left;
-    padding-left: 120px;
-    font-size: 35px;
-  }
-  .main-text {
-    margin-top: 90px;
-    text-align: left;
-    padding-left: 120px;
-    font-size: 18px;
-  }
-  .text {
-    margin-top: 30px;
-    text-align: left;
-    padding-left: 120px;
-    font-size: 18px;
-  }
 
-  .photo-grid {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  .photo {
-    width: 20%;
-    margin: 0 10px;
-  }
-  .bottom-text {
-    margin-top: 50px;
-    text-align: left;
-    padding-left: 120px;
-    font-size: 18px;
-  }
-.logo {
-    width: 40px; 
-    height: auto;
-    vertical-align: middle;
-    margin-right: 5px; 
-  }
-  .content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  .back-to-top:hover {
-    background-color: #0056b3;
-  }
-</style>
-<script>
-  window.addEventListener('scroll', function() {
-    var backToTopButton = document.querySelector('.back-to-top');
-    if (window.scrollY > 300) {
-      backToTopButton.style.display = 'block';
-    } else {
-      backToTopButton.style.display = 'none';
-    }
-  });
+        .banner {
+            width: 100%;
+            height: 500px;
+            background-image: url(https://d1lyi436ccpkte.cloudfront.net/strapi-assets/080_Main_Banner_1_c4ca79540c_8b5168b3a4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
 
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-</script>
+        .heading {
+            margin-top: 40px;
+            text-align: left;
+            padding-left: 120px;
+            font-size: 35px;
+        }
+
+        .main-text {
+            margin-top: 90px;
+            text-align: left;
+            padding-left: 120px;
+            font-size: 18px;
+        }
+
+        .text {
+            margin-top: 30px;
+            text-align: left;
+            padding-left: 120px;
+            font-size: 18px;
+        }
+
+        .photo-grid {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .photo {
+            width: 20%;
+            margin: 0 10px;
+        }
+
+        .bottom-text {
+            margin-top: 50px;
+            text-align: left;
+            padding-left: 120px;
+            font-size: 18px;
+        }
+
+        .logo {
+            width: 40px;
+            height: auto;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+
+        .info-block {
+            width: 10%;
+            padding: 15px;
+            margin-right: 40px;
+            background-color: white;
+            margin-top: 60px;
+            padding-left: 10px;
+        }
+
+        .image-side {
+            width: 20%;
+            padding-left: 40px;
+        }
+
+        .page {
+            background-color: white;
+            margin-top: 0px;
+            /* padding-left: 99px; */
+        }
+
+        .page3 {
+            display: flex;
+            align-items: flex-start;
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function () {
+            var backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </head>
+
 <body>
     <div class="banner">
         <nav>
@@ -190,31 +238,75 @@
                 <li><a href="#">At The Airport</a></li>
                 <li><a href="#">Services</a></li>
 
-                <input type="text" class="navbar-search"  placeholder="Search">
-                
+                <input type="text" class="navbar-search" placeholder="Search">
+
             </ul>
-            
+
         </nav>
-  <div class="banner"></div>
-  <h1 class="heading">080 Transit Hotel</h1>
-  <p class="main-text">Between the journey to dream destinations, amidst the impatience to seek new thrills, as you get ready to create fresh memories, how about a quick getaway to a blissful relaxation?</p>
-<p class="text">COME, STEP INTO 080 TRANSIT HOTEL @ BLR AIRPORT.</p>
-  <div class="photo-grid">
-    <img class="photo" src=https://media-cdn.tripadvisor.com/media/photo-s/0e/08/3b/69/bathroom-are-small-size.jpg alt="Photo 1">
-    <img class="photo" src=https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?cs=srgb&dl=pexels-iv%C3%A1n-rivero-1001965.jpg alt="Photo 2">
-    <img class="photo" src=https://i.pinimg.com/originals/6d/64/52/6d645286d6308e7f227c39f5d81f283a.jpg alt="Photo 3">
-    <img class="photo" src=https://www.usatoday.com/gcdn/-mm-/a6273ff1b2f762c1a9c52ad05942f2342870f578/c=47-0-1153-622/local/-/media/2016/05/02/USATODAY/usatsports/yotel_premium_cabin_at_dusk.jpg alt="Photo 4">
-  </div>
- <h1 class="heading">Contact:</h1>
-  <p class="bottom-text">For more information:<br></br>
-<img src=https://static.vecteezy.com/system/resources/previews/005/269/576/original/mail-icon-free-vector.jpg alt="Logo" class="logo"> Email : info@080-blr.com <br></br>
-<img src=https://img.freepik.com/free-icon/auricular-phone_318-1028.jpg alt="Logo" class="logo"> Phone : 08066787373 <br></br>
-<img src=https://thumbs.dreamstime.com/b/cell-phone-icon-vector-illustration-style-flat-iconic-cell-phone-symbol-cell-phone-icon-vector-illustration-style-flat-159424630.jpg alt="Logo" class="logo"> Mobile : +91-8951398241 <br></br>
-For bookings, click here: http://080-blr.com <br></br>
+        <div class="banner"></div>
+        <h1 class="heading">080 Transit Hotel</h1>
+        <p class="main-text">Between the journey to dream destinations, amidst the impatience to seek new thrills, as
+            you get ready to create fresh memories, how about a quick getaway to a blissful relaxation?</p>
+        <p class="text">COME, STEP INTO 080 TRANSIT HOTEL @ BLR AIRPORT.</p>
+        <div class="photo-grid">
+            <img class="photo"
+                src=https://media-cdn.tripadvisor.com/media/photo-s/0e/08/3b/69/bathroom-are-small-size.jpg
+                alt="Photo 1">
+            <img class="photo"
+                src=https://images.pexels.com/photos/1001965/pexels-photo-1001965.jpeg?cs=srgb&dl=pexels-iv%C3%A1n-rivero-1001965.jpg
+                alt="Photo 2">
+            <img class="photo" src=https://i.pinimg.com/originals/6d/64/52/6d645286d6308e7f227c39f5d81f283a.jpg
+                alt="Photo 3">
+            <img class="photo"
+                src=https://www.usatoday.com/gcdn/-mm-/a6273ff1b2f762c1a9c52ad05942f2342870f578/c=47-0-1153-622/local/-/media/2016/05/02/USATODAY/usatsports/yotel_premium_cabin_at_dusk.jpg
+                alt="Photo 4">
+        </div>
+        <h1 class="heading">Contact:</h1>
+        <p class="bottom-text">For more information:<br></br>
+            <img src=https://static.vecteezy.com/system/resources/previews/005/269/576/original/mail-icon-free-vector.jpg
+                alt="Logo" class="logo"> Email : info@080-blr.com <br></br>
+            <img src=https://img.freepik.com/free-icon/auricular-phone_318-1028.jpg alt="Logo" class="logo"> Phone :
+            08066787373 <br></br>
+            <img src=https://thumbs.dreamstime.com/b/cell-phone-icon-vector-illustration-style-flat-iconic-cell-phone-symbol-cell-phone-icon-vector-illustration-style-flat-159424630.jpg
+                alt="Logo" class="logo"> Mobile : +91-8951398241 <br></br>
+            For bookings, click here: http://080-blr.com <br></br>
 
-Disclaimer: Operated by Travel Food Services.</p><br></br>
+            Disclaimer: Operated by Travel Food Services.
+        </p><br></br>
 
-<button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        <div class="page page3">
+            <div class="image-side">
+                <img style=" height: 150px; width: 150px;"
+                    src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Bengaluru_Airport_Logo_d71fb85c36.svg"
+                    alt="KIA">
+            </div>
+            <div class="info-block">
+                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="" style="border-radius: 5;">FAQs</a>
+
+            </div>
+            <div class="info-block">
+                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Disclaimer</a>
+            </div>
+            <div class="info-block">
+                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Contact Us</a>
+            </div>
+            <div class="info-block">
+                <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank"
+                    rel="noopener noreferrer" class="footer__download__image">
+                    <img src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/google_play_71afea7706_776f74f714_4b190b64d9.svg"
+                        alt="Download on Google Play">
+                </a>
+            </div>
+            <div class="info-block">
+                <a href="https://apps.apple.com/us/app/blr-airport/id1501331497?ls=1">
+                    <img src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/ios_app_store_7228363a5c_6fae140a41_27c4893ebb.svg"
+                        alt="Download on App Store">
+                </a>
+            </div>
+        </div>
+
+        <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
 
 </body>
+
 </html>
