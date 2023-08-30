@@ -1,279 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landscape Page</title>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  .navbar {
-            overflow: auto;
-            background-color: rgb(155, 65, 228);
-            display: flex;
-            justify-content: space-between; /* Align the logo and search bar */
-            align-items: center; /* Center items vertically */
-            position: relative;
-        }
-        .navbar-logo {
-            width: 50px;
-            height: 50px;
-            margin-left: 20px; /* Adjust the margin as needed */
-        }
-        .navbar-search {
-            background-color: white;
-            border:#fff;
-            border-bottom: 2px solid white; /* Add a bottom border for the search bar */
-            color: white;
-            font-size: 16px;
-            padding: 5px;
-            outline:auto;
-        }
-
-        /* Add a container for the search bar to position it on the right side */
-        .search-container {
-            position: absolute;
-            top: 50%;
-            right: 20px; /* Adjust the right position as needed */
-            transform: translateY(-50%);
-        }
-
-        .navbar a {
-            float: left;
-            font-size: 35px;
-            color: rgb(247, 246, 248);
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: wavy;
-        }
-
-        * {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOST AND FOUND</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: verdana;
         }
 
-        
-        
-
-        nav {
+        .banner {
             width: 100%;
-            height: 60px;
-            background-color: #0005;
-            line-height: 50px;
+            height: 500px;
+            background-image: url(https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Lost_Found_1440_X_500_02afe64324_37c5c117c2.jpg);
+            background-size: cover;
+            background-position: center;
         }
 
-        nav ul {
-            float: left;
-            margin-right: 30px;
+        .container {
+            max-width: 100%;
+            /* margin: 20px auto; */
+            margin-left: 60px;
+            margin-right: 60px;
+            text-align: justify;
+            padding: 20px;
         }
 
-        nav ul li {
-            list-style-type: none;
-            display: inline-block;
-            transition: 0.7s all;
+        .input-container {
+            display: flex;
+            align-items: center;
         }
 
-        nav ul li:hover {
-            background-color: #088;
+        .input-container input[type="date"] {
+            width: 45%;
+            padding: 5px;
+            margin-right: 10px;
         }
 
-        nav ul li a {
-            text-decoration: none;
+        .input-container button {
+            padding: 5px 10px;
+        }
+
+        .main-text {
+
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .text {
+            font-weight: lighter;
+            font-size: 18px;
+        }
+
+        .page {
+            background-color: white;
+            /* margin-left: 20px; */
+            width: 100%;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            cursor: pointer;
+            background-color: #007bff;
             color: #fff;
-            padding: 30px;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
         }
-  .banner {
-    width: 100%;
-    height: 700px;
-    background-image: url(https://d1lyi436ccpkte.cloudfront.net/strapi-assets/airport_medical_banner_1440x500_3c14c69c40_b671e2ea46.jpg);
-    background-size: cover;
-    background-position: center;
-  }
-  .heading {
-    margin-bottom: 0; /* Remove the margin-bottom */
-  padding-top: 400px; /* Adjust this value to position the text vertically */
-  font-size: 50px;
-  color: rgb(15, 14, 14);
-  padding-bottom: 10px; /* Adjust this value to control space from bottom */
-  text-align: left; 
-  padding-left: 70px;/* Center-align the text */
-    
-  }
-  .main-text {
-    margin-top: 30px;
-    text-align: left;
-    padding-left: 120px;
-    font-size: 30px;
-  }
-  .text {
-    margin-top: 20px;
-    text-align: left;
-    padding-left: 120px;
-    font-size: 18px;
-  }
-  .bottom-text {
-    margin-top: 10px;
-    text-align: left;
-    padding-left: 120px;
-    font-size: 18px;
-  }
-.logo {
-    width: 40px; 
-    height: auto;
-    vertical-align: middle;
-    padding-left: 120px;
-    margin-right: 5px; 
-    background-color: transparent;
-  }
-  .content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  .back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    cursor: pointer;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  .back-to-top:hover {
-    background-color: #0056b3;
-  }
-  .main-text, .text, .bottom-text {
-  margin-top: 10px; /* Adjust as needed */
-  text-align: left;
-  /* Remove padding-left: 120px; */
-  font-size: 18px;
-}
-.image-side {
-      width: 20%;
-      /* padding: 20px; */
-     background-color: #f0f0f0;
-     margin-left: 40px;
-  }
-  .info-block {
-      width: 10%;
-      padding: 15px;
-      margin-right: 40px;
-      background-color: #f0f0f0;
-      margin-top: 40px;
-  }
-  .page {
-      background-color: #f0f0f0;
-      /* margin-left: 20px; */
-    }
 
-  .page3 {
-      display: flex;
-      align-items: flex-start;
-    }
-</style>
-<script>
-  window.addEventListener('scroll', function() {
-    var backToTopButton = document.querySelector('.back-to-top');
-    if (window.scrollY > 300) {
-      backToTopButton.style.display = 'block';
-    } else {
-      backToTopButton.style.display = 'none';
-    }
-  });
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
 
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  }
-</script>
+        .info-block {
+            width: 10%;
+            padding: 15px;
+            margin-left: 40px;
+            background-color: white;
+            margin-top: 40px;
+        }
+
+        .page3 {
+            display: flex;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+
+        .image-side {
+            width: 20%;
+            padding-left: 40px;
+
+        }
+    </style>
+    <script>
+        window.addEventListener('scroll', function () {
+            var backToTopButton = document.querySelector('.back-to-top');
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </head>
+
 <body>
-  <div class="banner">
-    <nav>
-        <ul>
-            <li><a href="C:\Users\ayush\Desktop\webEL\webdevEL.html">Home</a></li>
-            <li><a href="file:///C:/Users/ayush/OneDrive/Desktop/prog/new%20intro.html">Flights</a></li>
-            <li><a href="#">Transport</a></li>
-            <li><a href="#">Before You Fly</a></li>
-            <li><a href="#">At The Airport</a></li>
-            <li><a href="#">Services</a></li>
+    <div class="banner"></div>
+    <div class="container">
+        <h1>Search for your items below</h1>
+        <div class="text">If you have lost or misplaced something at BLR Airport, please fill the form below.</div>
+        <div class="input-container">
+            <input type="date" id="start-date" name="start-date">
+            <input type="date" id="end-date" name="end-date">
+            <button id="search-button">Search</button>
+        </div><BR><BR><BR>
+        <div class="main-text">Contact us if you are unable to locate your items from the search.</div>
+        <div class="text">TERMINAL 1 and TERMINAL 2<br>
+            <div class="contact-info">
+                <span class="icon">&#9742;</span>+91-8022012001 / +91-8066785555<br>
+            </div>
+            <div class="text">
+                <br><br>TERMINAL 1<br>
 
-            <input type="text" class="navbar-search"  placeholder="Search">
-            
-        </ul>
-        
-    </nav>
-    <h1 class="heading">Airport Medical Services</h1>
-  </div>
-  <br><br>
-  
-  <h1 class="text" style="font-size: xx-large;">Airport Medical Services</h1><br>
-  <img src=https://w7.pngwing.com/pngs/125/867/png-transparent-computer-icons-geo-fence-gps-navigation-systems-environment-icon-heart-share-icon-gps-navigation-systems.png alt="Logo" class="logo"><br></br>
-  <p class="text">Aster Medical Centre - Adjacent to Terminal 1 building<br></br></p>
-<p class="main-text">Aster Medical Clinic<br></br>
-Terminal 1</p>
-<p class="text">Level 1, Next to Thomas Cook</p>
+            </div>
+            <span class="icon">&#9993;</span>
+            <a href="lostandfound@bialairport.com">lostandfound@bialairport.com</a><br>
+            <br>
+            <div class="text">
+                TERMINAL 2<br>
+            </div>
+            <span class="icon">&#9993;</span>
+            <a href="t2lostandfound@bialairport.com"> t2lostandfound@bialairport.com</a><br>
 
-<p class="main-text">Terminal 2</p>
-<p class="text">Near Arrival exit gates</p><br></br>
- <img src=https://img.freepik.com/free-icon/auricular-phone_318-1028.jpg alt="Logo" class="logo"><br></br>
-  <p class="bottom-text">Duty Medical Officer (Aster Medical Centre) – +91 9739733335<br></br>
-Duty Medical Officer T1 - +91 9148790154<br></br>
-Duty Medical Officer T2 - +91 9513343244</p><br></br>
+            <br><br>
+            <div class="text">
+                Lost & Found information counter location<br>
+                <br><br>
+                TERMINAL 1<br>
+                Kerbside and Departure Hall: counter #16<br>
 
-<div>
-    <div class="page page3">
-      <div class="image-side">
-        <img style=" height: 150px; width: 150px; "
-          src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Bengaluru_Airport_Logo_d71fb85c36.svg" alt="KIA">
-      </div>
-      <div class="info-block">
-        <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="" style="border-radius: 5;">FAQs</a>
-  
-      </div>
-      <div class="info-block">
-        <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Disclaimer</a>
-      </div>
-      <div class="info-block">
-        <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Contact Us</a>
-      </div>
-      <div class="info-block">
-        <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank" rel="noopener noreferrer"
-          class="footer__download__image">
-          <img
-            src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/google_play_71afea7706_776f74f714_4b190b64d9.svg"
-            alt="Download on Google Play">
-        </a>
-      </div>
-      <div class="info-block">
-        <a href="https://apps.apple.com/us/app/blr-airport/id1501331497?ls=1">
-          <img
-            src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/ios_app_store_7228363a5c_6fae140a41_27c4893ebb.svg"
-            alt="Download on App Store">
-        </a>
-      </div>
+                <br>
+                TERMINAL 2<br>
+                Arrivals level, behind Airport Shuttle drop-off & pick-up points - P16 / P17<br>
+                <br><br>
+
+                Operating Hours: Monday to Sunday from 0200 hours to 2359 hours<br>
+                <br><br>
+                Claim Response Time: Within 3 working days<br>
+
+                <br><br>
+                If an item is lost on board the flight or at the gate area, please contact the airline's Lost and Found
+                department. They may have a different process for handling lost items.
+            </div>
+            <br><br>
+            <div class="main-text">Documents required to claim items</div>
+            <br>
+            <div class="text">Once you’ve identified your misplaced articles, please submit the following documents to
+                claim the items:<br>
+                <br>
+                <span ol>
+                    <li>Copy of boarding pass</li>
+                    <li>Details of items being claimed (verification)</li>
+                    <li>Valid Government photo ID proof</li>
+                    </ol>
+                    <br>
+
+                    If you have been authorised by the owner to claim the item, please submit the following
+                    documents:<br>
+                    <br>
+                    <span ol>
+                        <li>Valid Government photo-ID proof of the owner of the item</li>
+
+                        <li>Valid Government photo-ID proof of the individual authorised to collect</li>
+                        <li>Copy of boarding pass</li>
+                        <li>Letter of authorisation from the owner of the item, with details of the article.</li>
+            </div>
+            </ol>
+            <br><br>
+            <div class="main-text">Rules & Regulations</div><br>
+            <div class="text">Lost and Found goods must be routed through CISF and cannot be directly handled by the
+                finder<br>
+                Lost and Found Department does not accept or handle Security Restricted Articles and shall not be held
+                responsible for their management<br>
+                <br><br>
+                BLR Airport (BIAL) shall not be held responsible, and no claim shall lie against BLR Airport (BIAL) for
+                any good(s) that has been lost on its premises in the following scenarios:<br>
+                a) If the claimant fails to establish ownership over the lost good(s) by not providing the documents
+                sought for within the retention period<br>
+                b) When the property has been disposed off after the retention period provided for the respective lost
+                good(s).
+            </div>
+        </div>
     </div>
-  </div>
+    <br><br>
+    <br>
 
-<button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
 
-<div class="page">
-    <p>
-    <pre>     
-         &copy; 2023 BIAL. All Rights Reserved.
-        </pre>
-    </p>
-  </div>
-  
+    <div class="page page3">
+        <div class="image-side">
+            <img style=" height: 150px; width: 150px;"
+                src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/Bengaluru_Airport_Logo_d71fb85c36.svg"
+                alt="KIA">
+        </div>
+        <div class="info-block">
+            <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="" style="border-radius: 5;">FAQs</a>
+        </div>
+        <div class="info-block">
+            <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="">Disclaimer</a>
+        </div>
+        <div class="info-block">
+            <a class="col-md-4 col-sm-4 col-lg-4 footer_links_section" href="">Contact Us</a>
+        </div>
+        <div class="info-block">
+            <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank"
+                rel="noopener noreferrer" class="footer_download_image">
+                <img src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/google_play_71afea7706_776f74f714_4b190b64d9.svg"
+                    alt="Download on Google Play">
+            </a>
+        </div>
+        <div class="info-block">
+            <a href="https://apps.apple.com/us/app/blr-airport/id1501331497?ls=1">
+                <img src="https://d1lyi436ccpkte.cloudfront.net/strapi-assets/ios_app_store_7228363a5c_6fae140a41_27c4893ebb.svg"
+                    alt="Download on App Store">
+            </a>
+        </div>
+
+    </div><span>
+        <div class="page">
+            <p>
+            <pre>         &copy; 2023 BIAL. All Rights Reserved.
+                
+            </pre>
+            </p>
+        </div>
+    </span>
+
+    </div>
+
+    <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    <div class="page">
 
 </body>
+
 </html>
