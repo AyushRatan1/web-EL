@@ -10,26 +10,103 @@
             margin: 0;
             font-family: 'Times New Roman', Times, serif, sans-serif;
         }
-
-        .container {
-            width: 100%;
-            /* max-width: 1200px; */
-            /* margin: 0 auto; */
-            /* padding: 20px; */
+        .navbar {
+            overflow: auto;
+            background-color: rgb(155, 65, 228);
+            display: flex;
+            justify-content: space-between; /* Align the logo and search bar */
+            align-items: center; /* Center items vertically */
+            position: relative;
+        }
+        .navbar-logo {
+            width: 50px;
+            height: 50px;
+            margin-left: 20px; /* Adjust the margin as needed */
+        }
+        .navbar-search {
+            background-color: white;
+            border:#fff;
+            border-bottom: 2px solid white; /* Add a bottom border for the search bar */
+            color: white;
+            font-size: 16px;
+            padding: 5px;
+            outline:auto;
         }
 
-        .page {
-            background-color: #f0f0f0;
+        /* Add a container for the search bar to position it on the right side */
+        .search-container {
+            position: absolute;
+            top: 50%;
+            right: 20px; /* Adjust the right position as needed */
+            transform: translateY(-50%);
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 35px;
+            color: rgb(247, 246, 248);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: wavy;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: verdana;
+        }
+
+        
+        
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: #0005;
+            line-height: 50px;
+        }
+
+        nav ul {
+            float: left;
+            margin-right: 30px;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            transition: 0.7s all;
+        }
+
+        nav ul li:hover {
+            background-color: #088;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
             padding: 30px;
         }
 
-        .transparent-box {
-            background-image: url('https://d1lyi436ccpkte.cloudfront.net/strapi-assets/F_Lights_1440_X_500_2_89cfd0bf5a_1_4fee2992a1.jpg');
-            background-size: cover;
-            padding-left: 100px;
-            color: rgb(0, 0, 0);
-            text-align: center;
-        }
+        .banner {
+    width: 100%;
+    height: 700px;
+    background-image: url(https://d1lyi436ccpkte.cloudfront.net/strapi-assets/F_Lights_1440_X_500_2_89cfd0bf5a_1_4fee2992a1.jpg);
+    background-size: cover;
+    background-position: center;
+   
+    filter: brightness(90%);
+  }
+  .heading {
+    margin-bottom: 0; /* Remove the margin-bottom */
+  padding-top: 400px; /* Adjust this value to position the text vertically */
+  font-size: 50px;
+  color: rgb(15, 14, 14);
+  padding-bottom: 10px; /* Adjust this value to control space from bottom */
+  text-align: left; 
+  padding-left: 70px;/* Center-align the text */
+  
+    
+  }
 
         .content {
             background-color: rgba(255, 255, 255, 0.8);
@@ -37,23 +114,39 @@
         }
 
         .page2 {
-            display: flex;
-            align-items: flex-start;
-        }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-        .image-column {
-            width: 30%;
-            /* padding: 20px; */
-            padding-bottom: 100px;
-        }
+.image-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adjust the spacing between images as needed */
+}
 
-        .image-box {
-            width: 100%;
-            margin-bottom: 20px;
-        }
+.image-box {
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+  transition: transform 0.2s; /* Add a smooth transition effect on hover */
+}
+
+.image-box:hover {
+  transform: scale(1.05); /* Increase size on hover for a subtle effect */
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #000; /* Add a border to the images if desired */
+}
+
 
         .info-column {
-            width: 125%;
+            width: 12%;
             padding: 10px;
         }
 
@@ -79,6 +172,7 @@
             padding: 15px;
             margin-right: 40px;
             background-color: white;
+            text-decoration: none;
         }
 
         .back-to-top {
@@ -107,103 +201,54 @@
 
 <body>
 
-    <div class="container">
-        <div class="page transparent-box">
-            <div class="content">
-                <h1 style="font-family: Arial, Helvetica, sans-serif">
-                    Flights<br>
-                    Terminal 1 & Terminal 2</h1>
-            </div>
-        </div><br><br>
-        <div class="content text"><span>Keep track of flight timings with live updates.</span>
+  <div class="banner">
+    <nav>
+        <ul>
+            <li><a href="C:\Users\ayush\Desktop\webEL\webdevEL.html">Home</a></li>
+            <li><a href="file:///C:/Users/ayush/OneDrive/Desktop/prog/new%20intro.html">Flights</a></li>
+            <li><a href="#">Transport</a></li>
+            <li><a href="#">Before You Fly</a></li>
+            <li><a href="#">At The Airport</a></li>
+            <li><a href="#">Services</a></li>
+
+            <input type="text" class="navbar-search"  placeholder="Search">
+            
+        </ul>
+        
+    </nav>
+    <h1 class="heading" style="color: white; filter: brightness(100%);">Flight Information</h1>
+  </div>
+  <br><br>
+        <div class="content text"><span style="font-size: large;;">Keep track of flight timings with live updates.</span>
+            <br>
+            <span class="text" style="font-size: large;">Departure</span>
+
         </div>
         <div class="page page2">
-            <table style="align-content: center;">
-                <div>
-                    <pre>
-          <img src="https://www.bengaluruairport.com/static/media/flight-status.4d31a96be257c6ea8cdf.svg" alt="flight" ></img><span class="text">Departure</span>
-        </div>
-        </pre>
-
-                    <tr>
-                        <td>
-                            <div class="image-column">
-                                <div class="image-box">
-                                    <img style=" height: 150px;  margin-left: 6px;  margin-top: 98px; width: 150px; background-color: rgb(255, 255, 255);"
-                                        src="https://d1lyi436ccpkte.cloudfront.net/uploads/akasa_eb805f9d1c.png?99475585.19999993"
-                                        alt="Image 1">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="info-column">
-                                <div class="info-box">
-                                    <h2>Information 1</h2>
-                                    <p>Information about image 1.</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <div class="image-column">
-                                <div class="image-box">
-                                    <img style=" height: 150px;  margin-left: 6px;  margin-top: 98px; width: 150px; background-color: rgb(40, 54, 156);"
-                                        src="https://d1lyi436ccpkte.cloudfront.net/uploads/6_E_5a28a9c7ba.png"
-                                        alt="Image 2">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="info-column">
-                                <div class="info-box">
-                                    <h2>Information 2</h2>
-                                    <p>Information about image 2.</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="image-column">
-                                <div class="image-box">
-                                    <img style=" height: 150px;  margin-left: 6px;  margin-top: 98px; width: 150px; background-color: rgb(236, 32, 40);"
-                                        src="https://d1lyi436ccpkte.cloudfront.net/uploads/OG_1649f8409c.png"
-                                        alt="Image 3">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="info-column">
-                                <div class="info-box">
-                                    <h2>Information 3</h2>
-                                    <p>Information about image 3.</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="image-column">
-                                <div class="image-box">
-                                    <img style=" height: 150px;  margin-left: 6px;  margin-top: 98px; width: 150px; background-color: rgb(86, 99, 196);"
-                                        src="https://d1lyi436ccpkte.cloudfront.net/uploads/G8_00a74f5681.png"
-                                        alt="Image 4">
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="info-column">
-                                <div class="info-box">
-                                    <h2>Information 4</h2>
-                                    <p>Information about image 4.</p>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-            </table>
-        </div>
+            <div class="image-container">
+              <div class="image-box">
+                <img src="https://picxart1.files.wordpress.com/2023/09/screenshot-2023-09-02-125359.png" alt="Image 1">
+              </div>
+              <div class="image-box">
+                <img src="https://picxart1.files.wordpress.com/2023/09/screenshot-2023-09-02-125422.png" alt="Image 2">
+              </div>
+              <div class="image-box">
+                <img src="https://picxart1.files.wordpress.com/2023/09/screenshot-2023-09-02-125439.png" alt="Image 3">
+              </div>
+              <div class="image-box">
+                <img src="https://picxart1.files.wordpress.com/2023/09/screenshot-2023-09-02-125445.png" alt="Image 4">
+              </div>
+              <div class="image-box">
+                <img src="https://picxart1.files.wordpress.com/2023/09/screenshot-2023-09-02-125504.png" alt="Image 5">
+              </div>
+              <div class="image-box">
+                <img src="https://picxart1.files.wordpress.com/2023/09/screenshot-2023-09-02-125458.png" alt="Image 6">
+              </div>
+            </div>
+          </div>
+        <br><br>
+          <h1 style="align-items:baseline; font-size: large;">Disclaimer: All passengers are requested to contact the respective airlines for the latest flight information to ensure accuracy.</h1>
+          
         <div class="page page3">
             <div class="image-side">
                 <img style=" height: 150px; width: 150px;"
@@ -211,14 +256,14 @@
                     alt="KIA">
             </div>
             <div class="info-block">
-                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="" style="border-radius: 5;">FAQs</a>
+                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="" style="border-radius: 5;text-decoration: none;">FAQs</a>
 
             </div>
             <div class="info-block">
-                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Disclaimer</a>
+                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="" style="text-decoration: none;">Disclaimer</a>
             </div>
             <div class="info-block">
-                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="">Contact Us</a>
+                <a class="col-md-4 col-sm-4 col-lg-4 footer__links__section" href="" style="text-decoration: none;">Contact Us</a>
             </div>
             <div class="info-block">
                 <a href="https://play.google.com/store/apps/details?id=com.bial.edp" target="_blank"
